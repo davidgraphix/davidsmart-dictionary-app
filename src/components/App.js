@@ -1,11 +1,11 @@
 import React from "react";
 import SearchMenu from "./SearchMenu";
 import ShowSearchResult from "./ShowSearchResults";
-import "../App.css"
+import "../App.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <h1>David Smart Dictionary app</h1>
       <SearchMenu />
       <ShowSearchResult />
