@@ -20,7 +20,7 @@ function SearchMenu() {
     <div className="searchBox">
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search Word..."
         onChange={(e) => {
           setSearchWord(e.target.value);
         }}
