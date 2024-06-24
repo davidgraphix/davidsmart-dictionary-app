@@ -8,7 +8,6 @@ const App = () => {
     <div className="App">
       <h1>David's Dictionary App</h1>
       <SearchMenu />
-      <ShowSearchResult />
     </div>
   );
 };

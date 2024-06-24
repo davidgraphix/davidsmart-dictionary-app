@@ -3,12 +3,16 @@ import { useState } from "react";
 import "../App.css";
 import { FcSpeaker } from "react-icons/fc";
 
-function ShowSearchResult() {
-    const [ data ] = useState("");
-    function playAudio() {
-        let audio = new Audio(data.phonetics[0].audio);
-        audio.play();
-      }
+function ShowSearchResult(props) {
+  const data = props.result;
+  function playAudio() {
+    if (data.phonetics[0].audio) {
+      let audio = new Audio(data.phonetics[0].audio);
+      audio.play();
+    } else {
+      window.alert("No audio Found for " + data.word);
+    }
+  }
 
   return (
     <>
